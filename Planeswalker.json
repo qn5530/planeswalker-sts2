@@ -1,0 +1,14 @@
+{
+  "id": "Planeswalker",
+  "name": "The Planeswalker (Magic: The Gathering)",
+  "author": "Quy",
+  "description": "Adds The Planeswalker, a new character whose cards are inspired by Magic: The Gathering (Magic Duels / Magic Origins era). Requires BaseLib.",
+  "version": "v0.1.0",
+  "min_game_version": "0.107.1",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [
+    {"id": "BaseLib", "min_version": "3.4.7"}
+  ],
+  "affects_gameplay": true
+}

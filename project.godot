@@ -1,0 +1,16 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="Planeswalker"
+config/features=PackedStringArray("4.5", "C#", "Mobile")
+config/icon="res://Planeswalker/mod_image.png"
+
+[dotnet]
+
+project/assembly_name="Planeswalker"
+
+[rendering]
+
+renderer/rendering_method="mobile"

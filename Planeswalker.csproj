@@ -1,0 +1,54 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1" InitialTargets="CheckDependencyPaths">
+    <Import Project=".\Sts2PathDiscovery.props"/>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>true</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RootNamespace>Planeswalker</RootNamespace>
+        <AssemblyName>Planeswalker</AssemblyName>
+        <AppOutputBase>$(MSBuildProjectDirectory)\</AppOutputBase>
+        <PathMap>$(AppOutputBase)=.\</PathMap>
+        <GodotDisabledSourceGenerators>GodotPluginsInitializer</GodotDisabledSourceGenerators>
+        <NoWarn>$(NoWarn);MSB3270</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup Condition="Exists('$(Sts2DataDir)')">
+        <Reference Include="0Harmony">
+            <HintPath>$(Sts2DataDir)/0Harmony.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="sts2">
+            <HintPath>$(Sts2DataDir)/sts2.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.4.7" PrivateAssets="All"/>
+        <!-- Builds the Godot .pck from the Planeswalker/ asset folder without needing the Godot editor. -->
+        <PackageReference Include="BSchneppe.StS2.PckPacker" Version="0.1.1" PrivateAssets="All"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Planeswalker/**"/>
+        <EmbeddedResource Remove="Planeswalker/**"/>
+        <None Include="Planeswalker.json"/>
+        <None Include="project.godot"/>
+        <None Include="Planeswalker/**"/>
+    </ItemGroup>
+
+    <Target Name="CheckDependencyPaths">
+        <Error Text="Slay the Spire 2 data not found at path '$(Sts2DataDir)'"
+               Condition="'$(Sts2DataDir)' == '' or !Exists('$(Sts2DataDir)')"/>
+    </Target>
+
+    <!-- Copy dll + manifest + pck into <game>/mods/Planeswalker/ after every build. -->
+    <Target Name="CopyToModsFolderOnBuild" AfterTargets="PackPck">
+        <Message Text="Copying Planeswalker mod files to $(ModsPath)Planeswalker/" Importance="high"/>
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModsPath)Planeswalker/"/>
+        <Copy SourceFiles="Planeswalker.json" DestinationFolder="$(ModsPath)Planeswalker/"/>
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFolder="$(ModsPath)Planeswalker/" Condition="Exists('$(TargetDir)$(TargetName).pdb')"/>
+        <Copy SourceFiles="$(PckPackerOutputPath)" DestinationFolder="$(ModsPath)Planeswalker/" Condition="Exists('$(PckPackerOutputPath)') And '$(PckPackerSkipped)' != 'true'"/>
+    </Target>
+</Project>

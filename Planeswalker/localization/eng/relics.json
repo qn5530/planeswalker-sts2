@@ -1,0 +1,11 @@
+{
+  "PLANESWALKER-SOL_RING.title": "Sol Ring",
+  "PLANESWALKER-SOL_RING.description": "At the start of each combat, gain {Energy:energyIcons()}.",
+  "PLANESWALKER-SOL_RING.flavor": "A ring forged from a fragment of a sun. Every planeswalker wants one; few are willing to say why.",
+  "PLANESWALKER-CHROMATIC_LANTERN.title": "Chromatic Lantern",
+  "PLANESWALKER-CHROMATIC_LANTERN.description": "At the start of each combat, gain [blue]{Mana}[/blue] mana of [gold]every[/gold] color.",
+  "PLANESWALKER-CHROMATIC_LANTERN.flavor": "Its light reveals every color of mana at once.",
+  "PLANESWALKER-SENSEIS_DIVING_TOP.title": "Sensei's Divining Top",
+  "PLANESWALKER-SENSEIS_DIVING_TOP.description": "At the start of your turn, [gold]Scry[/gold] [blue]{Scry}[/blue].",
+  "PLANESWALKER-SENSEIS_DIVING_TOP.flavor": "Spin it, and the future rearranges itself to suit you."
+}

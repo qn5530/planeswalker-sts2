@@ -1,0 +1,20 @@
+{
+  "PLANESWALKER-SAVANNAH_LIONS_ORB.title": "Savannah Lions",
+  "PLANESWALKER-SAVANNAH_LIONS_ORB.description": "White creature: attacks a random enemy.",
+  "PLANESWALKER-SAVANNAH_LIONS_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, deal [blue]{Passive}[/blue] damage to a random enemy.\n[gold]Evoke:[/gold] Deal [blue]{Evoke}[/blue] damage to a random enemy.",
+  "PLANESWALKER-GRIZZLY_BEARS_ORB.title": "Grizzly Bears",
+  "PLANESWALKER-GRIZZLY_BEARS_ORB.description": "Green creature: attacks a random enemy.",
+  "PLANESWALKER-GRIZZLY_BEARS_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, deal [blue]{Passive}[/blue] damage to a random enemy.\n[gold]Evoke:[/gold] Deal [blue]{Evoke}[/blue] damage to a random enemy.",
+  "PLANESWALKER-SHIVAN_DRAGON_ORB.title": "Shivan Dragon",
+  "PLANESWALKER-SHIVAN_DRAGON_ORB.description": "Red creature: breathes fire on ALL enemies.",
+  "PLANESWALKER-SHIVAN_DRAGON_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, deal [blue]{Passive}[/blue] damage to ALL enemies.\n[gold]Evoke:[/gold] Deal [blue]{Evoke}[/blue] damage to ALL enemies.",
+  "PLANESWALKER-VAMPIRE_NIGHTHAWK_ORB.title": "Vampire Nighthawk",
+  "PLANESWALKER-VAMPIRE_NIGHTHAWK_ORB.description": "Black creature with lifelink: attacks and heals you.",
+  "PLANESWALKER-VAMPIRE_NIGHTHAWK_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, deal [blue]{Passive}[/blue] damage to a random enemy and heal [blue]{Passive}[/blue] HP.\n[gold]Evoke:[/gold] Deal [blue]{Evoke}[/blue] damage to a random enemy and heal [blue]{Evoke}[/blue] HP.",
+  "PLANESWALKER-SERRA_ANGEL_ORB.title": "Serra Angel",
+  "PLANESWALKER-SERRA_ANGEL_ORB.description": "White creature with vigilance: attacks and guards you.",
+  "PLANESWALKER-SERRA_ANGEL_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, deal [blue]{Passive}[/blue] damage to a random enemy and gain [blue]{Passive}[/blue] [gold]Block[/gold].\n[gold]Evoke:[/gold] Deal [blue]{Evoke}[/blue] damage to a random enemy and gain [blue]{Evoke}[/blue] [gold]Block[/gold].",
+  "PLANESWALKER-BIRDS_OF_PARADISE_ORB.title": "Birds of Paradise",
+  "PLANESWALKER-BIRDS_OF_PARADISE_ORB.description": "Green creature: taps for mana.",
+  "PLANESWALKER-BIRDS_OF_PARADISE_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, gain [blue]{Passive}[/blue] [green]Green mana[/green].\n[gold]Evoke:[/gold] Gain [blue]{Evoke}[/blue] [gold]Energy[/gold]."
+}

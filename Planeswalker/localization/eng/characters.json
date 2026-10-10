@@ -1,0 +1,18 @@
+{
+  "PLANESWALKER-THE_PLANESWALKER.title": "The Planeswalker",
+  "PLANESWALKER-THE_PLANESWALKER.titleObject": "The Planeswalker",
+  "PLANESWALKER-THE_PLANESWALKER.description": "A mage whose spark lets them walk between worlds.\nCards gain colored mana that lasts all combat; spend it to fuel each color's finisher.",
+  "PLANESWALKER-THE_PLANESWALKER.pronounObject": "them",
+  "PLANESWALKER-THE_PLANESWALKER.pronounSubject": "they",
+  "PLANESWALKER-THE_PLANESWALKER.pronounPossessive": "theirs",
+  "PLANESWALKER-THE_PLANESWALKER.possessiveAdjective": "their",
+  "PLANESWALKER-THE_PLANESWALKER.aromaPrinciple": "[sine][gold]Mana flows through every plane. Even this one.[/gold][/sine]",
+  "PLANESWALKER-THE_PLANESWALKER.banter.alive.endTurnPing": "Tap out when you're ready.",
+  "PLANESWALKER-THE_PLANESWALKER.banter.dead.endTurnPing": "...",
+  "PLANESWALKER-THE_PLANESWALKER.bestiaryQuote": "I have not yet dealt with this creature.",
+  "PLANESWALKER-THE_PLANESWALKER.cardsModifierTitle": "Planeswalker Cards",
+  "PLANESWALKER-THE_PLANESWALKER.cardsModifierDescription": "Planeswalker cards will now appear in rewards and shops.",
+  "PLANESWALKER-THE_PLANESWALKER.eventDeathPrevention": "My spark will not go out here.",
+  "PLANESWALKER-THE_PLANESWALKER.goldMonologue": "[sine]Enough to buy a few more spells...[/sine]",
+  "PLANESWALKER-THE_PLANESWALKER.unlockText": "Play a single run with [pink]{Prerequisite}[/pink] to unlock this character."
+}

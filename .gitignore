@@ -1,0 +1,26 @@
+.godot/
+bin/
+obj/
+.idea/
+.vs/
+publish/
+*.user
+Directory.Build.props
+
+# local only: screenshots, trailer footage and tooling, release bundles, publishing notes
+shots/
+video/
+release/
+tools/shoot.sh
+tools/kinetic.py
+tools/tc.sh
+PUBLISHING.md
+
+# Wizards of the Coast art (Scryfall crops) is regenerated locally: tools/fetch.py then tools/gen_images.py
+tools/art/
+Planeswalker/images/card_portraits/
+Planeswalker/images/orbs/
+Planeswalker/images/relics/
+Planeswalker/images/powers/
+Planeswalker/images/mod_image.png
+MODLOG.local.md
